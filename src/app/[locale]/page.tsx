@@ -5,9 +5,8 @@ export default function Index() {
   const t = useTranslations('Index');
 
   return (
-    <div className="p-5">
-      <h1>{t('title')}</h1>
-      <Button>Button</Button>
+    <div>
+      <Button>{t('btn')}</Button>
     </div>
   );
 }
