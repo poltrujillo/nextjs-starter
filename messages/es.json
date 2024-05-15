@@ -1,6 +1,7 @@
 {
   "Index": {
     "title": "Hola mundo!",
-    "btn": "Haz clic!"
+    "btn": "Haz clic!",
+    "btnSecondary": "Hazme clic a mi también!"
   }
 }
