@@ -1,5 +1,9 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
+import { poppins } from '@/utils/fonts';
+import { Toaster } from '@/components/ui/sonner';
+
+import '@/styles/globals.css';
 
 export default async function LocaleLayout({
   children,
@@ -13,10 +17,11 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={poppins.variable}>
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}
+          <Toaster position="top-center" richColors />
         </NextIntlClientProvider>
       </body>
     </html>
